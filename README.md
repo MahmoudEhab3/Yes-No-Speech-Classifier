@@ -2,14 +2,14 @@
 This project builds a binary classifier that recognizes whether a 1-second audio clip contains the word "yes" or "no". It uses audio processing and machine learning — implementing Logistic Regression, Naive Bayes, and Ensemble Learning algorithms from scratch.
 
 🧩 Step-by-Step Overview
-1. Dataset: Mini Speech Commands
+## 1. Dataset: Mini Speech Commands
 Audio clips from Google’s open-source dataset.
 
 Only two classes: "yes" and "no".
 
 1,000 samples of each, 1-second .wav files at 16 kHz.
 
-2. Audio Feature Extraction
+## 2. Audio Feature Extraction
 Each audio clip undergoes several preprocessing steps using the librosa library before feature extraction:
 
 🔧 Preprocessing Steps:
@@ -30,15 +30,15 @@ Spectral Rolloff – Frequency below which 85% of the signal’s energy is conta
 
 Zero-Crossing Rate – Measures how often the signal changes sign, useful for detecting sharp changes or noisiness.
 
-3. Preprocessing
+## 3. Preprocessing
 Normalized features using StandardScaler.
 
 Balanced data using resample to avoid class bias.
 
 Encoded labels numerically.
 
-🤖 Machine Learning Models
-1. Logistic Regression (✅ Implemented from Scratch)
+# 🤖 Machine Learning Models
+## 1. Logistic Regression (✅ Implemented from Scratch)
 Used NumPy to manually build a logistic regression classifier.
 
 Optimized model weights using gradient descent.
@@ -47,7 +47,7 @@ Included sigmoid activation, loss calculation, and binary thresholding.
 
 No ML libraries were used for model training.
 
-2. Naive Bayes (✅ Implemented from Scratch)
+## 2. Naive Bayes (✅ Implemented from Scratch)
 Manually calculated:
 
 Prior probabilities for each class.
@@ -58,7 +58,7 @@ Likelihood using the Gaussian probability density function.
 
 Applied Bayes’ Theorem for class prediction.
 
-3. Ensemble Learning (✅ Custom Implementation)
+## 3. Ensemble Learning (✅ Implemented from Scratch)
 Implemented a simple ensemble combining:
 
 Built-in Logistic Regression
@@ -69,7 +69,7 @@ Used majority voting for classification tasks (our case).
 
 Boosts performance and robustness compared to a single model.
 
-📊 Evaluation
+## 4. 📊 Evaluation
 Used standard classification metrics to evaluate performance:
 
 Accuracy
@@ -82,7 +82,7 @@ F1-score
 
 These metrics helped assess how well the models distinguish "yes" from "no".
 
-🎤 Real-Time Voice Classification
+## 5. 🎤 Real-Time Voice Classification
 To demonstrate our model in action:
 
 Recorded user voice using a built-in audio recording library.
