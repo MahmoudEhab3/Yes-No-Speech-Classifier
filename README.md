@@ -1,4 +1,4 @@
-✅ Yes-No-Speech-Classifier
+# ✅ Yes-No-Speech-Classifier
 This project builds a binary classifier that recognizes whether a 1-second audio clip contains the word "yes" or "no". It uses audio processing and machine learning — implementing Logistic Regression, Naive Bayes, and Ensemble Learning algorithms from scratch.
 
 🧩 Step-by-Step Overview
